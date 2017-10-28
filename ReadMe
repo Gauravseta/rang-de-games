@@ -1,19 +1,13 @@
-================================================Details of CAST Project===========================================
+================================================Details of Rang De Games Arena Project===========================================
 
 *********** Project Description *************
 
-This CASTRepoProject WebApp uses AngularJs 1, CSS,BootStrap,UI-BootStrap,Angular UI-Router.
- Front End consists of 3 Screens, 
-	1.Landing screen displays all the available technologies (Screen 1:Technologies).
-	2.On clicking any of technology,Respective Technology repositories are displayed (Screen 2:Repositories).
-	  2.a. Pagination is implemented and 9 repos are visible on each page.
-	  2.b. Search feature has been implemented to find respective technology repo based on its full_name.
-	3.On clicking any of repo, will be redirected to profile information of the repo owner (Screen 3:UserProfile).
-	   3.a. Contains Image of the owner.
-           3.b. Displays data such as Name,Bio,Location,Company,Link if available.
-           3.c. Displays all the repo owner has with pagination and search feature.
+This  WebApp uses AngularJs 1, CSS,BootStrap,UI-BootStrap,Angular UI-Router.
+ Front End consists of 1 Screen, 
+	1.Landing screen displays all the games developed by all platforms.
+	  1.a. Pagination is implemented.
 
-Note: Search Feature is added to search the items from current page items
+Note: Search Feature is added to search the games from current page games
 
 
 ***************Steps to Deploy ********************************
@@ -28,7 +22,7 @@ Note: This Project can be deployed in two ways:
 
 Note: I assume that Node and NPM are installed on your machine,If not then install both and then follow below steps.
 
-1.Extract "CASTRepoProject.zip",Go to directory "CASTRepoProject".
+1.Extract "RangDeGames.zip",Go to directory "RangDeGames".
 2.Inside the directory,following files and folder should be visible.
    2.a.app folder
    2.b.gulpfile.js
@@ -48,13 +42,13 @@ Note:If above procedure fails due to restricted access to download via NPM then 
 
 **************** 2. Steps to Deploy this project using Tomcat *********
 
-1.Extract "CASTRepoProject.zip",A directory with name "CASTRepoProject" would be created with all data.
+1.Extract "RangDeGames.zip",A directory with name "RangDeGames" would be created with all data.
 2. Configure Tomcat on your local machine to run on <port>
 3. paste the complete folder "CASTRepoProject" in "webapps" directory of tomcat folder.
 4. After copying the folder to "webapps" directory of tomcat folder, test the project visually.
-5. Hit the url "http://localhost:<port>/CASTRepoProject/app/index.html".
+5. Hit the url "http://localhost:<port>/RangDeGames/app/index.html".
 		Example:
-		"http://localost:8080/CASTRepoProject/app/index.html"
+		"http://localost:8080/RangDeGames/app/index.html"
 
 
 Note: Check the above url correctly as index.html is inside "app" folder and not directly at the root level.
@@ -71,7 +65,6 @@ Note: Check the above url correctly as index.html is inside "app" folder and not
 1.Given the API,response of the API is carefully observed and made full use of it.
 2.Due to Time limitation,Look of the ui may not be good, but has tried to improvise as much possible.
 3.Identation may not be proper due to IDE mismatch.Request to ignore at few, though atmost care is taken.
-4.On selecting a repo on screen 2 from the bottom.e.g clicking on 8th listed repo. then on moving to screen 3, page will be automatically dragged downwards at the same where page at screen 2 was.
 
 
 
