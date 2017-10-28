@@ -1,0 +1,16 @@
+{
+  "name": "castproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "start": "npm install && gulp watch"
+  },
+  "author": "",
+  "license": "ISC"
+}

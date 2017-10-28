@@ -1,0 +1,92 @@
+	body {
+		min-height:650px;
+	}
+	body .body-section {
+		min-height:600px;
+		background-color:#D4E0E6;
+		padding:10px;
+	}	
+	.header-section {
+		background-color:#322955;
+		text-align:center;
+		padding:20px 1px;
+		color:#8E8AA2;
+		font-size: xx-large;
+	}
+	
+	.align-center {
+		text-align:center;
+		
+	}
+	
+	.align-left {
+		text-align:left;
+	}
+
+	.margin-top10 {
+		margin-top:10px;
+	}
+
+	.margin-left50 {
+		margin-left:50px;
+	}
+	
+	.profile-repostory-label {
+		text-align:center;
+		padding:10px 0px;
+		font-size:x-large;
+		margin-top:20px;
+		border:1px solid black;	
+	}
+	.profile-image {
+		height:230px;
+		width:230px;
+		border-radius:15px;
+	}
+	
+	.profile-name {
+		margin-top:5px;
+		font-weight: 600;
+		font-size: 26px;
+		text-align: left;
+	}
+	
+	.repoitem-title {
+		color:darkblue;
+		font-weight:600;
+		text-decoration:underline;
+	}
+	.tech-item {
+		margin-top: 5px;
+		border:1px solid #322955;
+		padding:15px;
+		cursor:pointer;	
+    		font-size: x-large;
+		text-align:left;
+		margin-left:0px;
+		background-color:white;
+		border-radius:6px;
+		
+	}
+	.tech-item:hover {
+		box-shadow: 3px 2px 2px gray;
+	}
+	
+	.content-header-title {
+		margin-bottom:10px;
+		margin-top:10px;
+		color:#322955;
+		font-size:-webkit-xxx-large;
+	}
+	
+	ul {
+	        list-style-type: none !important;
+	  	padding-left: 0;
+	}
+	ul li {
+		max-width:100%;
+		padding-top:4px;
+		text-overflow: ellipsis;
+	  	text-align:left;
+	     
+	}

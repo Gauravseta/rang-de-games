@@ -1,0 +1,35 @@
+<div class="header-section">{{headerTitle}}</div>
+<div class="body-section">
+  <div class="container-fluid">
+     <div class="row">
+      <div class=" col-sm-12 align-center">
+           <div class="content-header-title">Repositories of {{techName}}</div>
+           <div class="align-left"><span>Search</span><input type="text" value="search" ng-model="searchKeyword"></input></div>
+	   <div ng-repeat="repoitem in listsOfTechsRepo.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage)) | filter: searchKeyword" ng-click="goToUserProfile(repoitem)" class="tech-item" style="line-height:1;">
+		<div class="row">
+		   <div class="col-xs-9 align-left">
+			<div class="repoitem-title">	 {{repoitem.full_name}}
+                        </div>
+			<div class="margin-top10">{{repoitem.description}}</div>
+		  </div>
+			<div class="col-xs-3">
+			    <div class="margin-left50">
+			      <img src="images/star_black.svg"></img>{{repoitem.stargazers_count}}
+                            </div>
+			</div>	
+		</div>
+              
+                
+           </div>
+	
+	<pagination
+		      ng-model="currentPage"
+		      total-items="totalTechRepoCount"
+			items-per-page="itemsPerPage"
+			max-size="maxSize" 
+		      boundary-links="true">
+		 </pagination>
+        
+      </div>
+     </div>
+  </div>

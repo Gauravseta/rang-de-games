@@ -1,0 +1,89 @@
+================================================Details of CAST Project===========================================
+
+*********** Project Description *************
+
+This CASTRepoProject WebApp uses AngularJs 1, CSS,BootStrap,UI-BootStrap,Angular UI-Router.
+ Front End consists of 3 Screens, 
+	1.Landing screen displays all the available technologies (Screen 1:Technologies).
+	2.On clicking any of technology,Respective Technology repositories are displayed (Screen 2:Repositories).
+	  2.a. Pagination is implemented and 9 repos are visible on each page.
+	  2.b. Search feature has been implemented to find respective technology repo based on its full_name.
+	3.On clicking any of repo, will be redirected to profile information of the repo owner (Screen 3:UserProfile).
+	   3.a. Contains Image of the owner.
+           3.b. Displays data such as Name,Bio,Location,Company,Link if available.
+           3.c. Displays all the repo owner has with pagination and search feature.
+
+Note: Search Feature is added to search the items from current page items
+
+
+***************Steps to Deploy ********************************
+
+Note: This Project can be deployed in two ways: 
+	1. Using Node.
+	2.Using Tomcat.
+
+ Steps on how to deploy using each way is given below.
+
+*************** 1.  Steps to deploy using Node ******************
+
+Note: I assume that Node and NPM are installed on your machine,If not then install both and then follow below steps.
+
+1.Extract "CASTRepoProject.zip",Go to directory "CASTRepoProject".
+2.Inside the directory,following files and folder should be visible.
+   2.a.app folder
+   2.b.gulpfile.js
+   2.c.package.json.
+   2.d.screenshots folder
+3.If you are not at this hiererchy then make sure you are pointing at this level.
+4.Open the command window at this level.
+5.In command window run the following command "npm start".
+6.It will download all dependencies and automatically open the Chrome Browser pointing to webapp.
+
+Note: It is assumed that port "3000" is free while running this demo.If not then configure port available in "gulpfile.js"
+	by replacing "3000" by the port number which is free.Final String will look like. e.g. var port="8081"; or var port="8082"; .
+
+Note  :It is assumed that chrome browser is installed on machine,if not then install and follow above procedure. 
+
+Note:If above procedure fails due to restricted access to download via NPM then follow Tomcat method to deploy the project.
+
+**************** 2. Steps to Deploy this project using Tomcat *********
+
+1.Extract "CASTRepoProject.zip",A directory with name "CASTRepoProject" would be created with all data.
+2. Configure Tomcat on your local machine to run on <port>
+3. paste the complete folder "CASTRepoProject" in "webapps" directory of tomcat folder.
+4. After copying the folder to "webapps" directory of tomcat folder, test the project visually.
+5. Hit the url "http://localhost:<port>/CASTRepoProject/app/index.html".
+		Example:
+		"http://localost:8080/CASTRepoProject/app/index.html"
+
+
+Note: Check the above url correctly as index.html is inside "app" folder and not directly at the root level.
+
+
+
+
+
+
+
+
+************* Known Issues ********************************
+
+1.Given the API,response of the API is carefully observed and made full use of it.
+2.Due to Time limitation,Look of the ui may not be good, but has tried to improvise as much possible.
+3.Identation may not be proper due to IDE mismatch.Request to ignore at few, though atmost care is taken.
+4.On selecting a repo on screen 2 from the bottom.e.g clicking on 8th listed repo. then on moving to screen 3, page will be automatically dragged downwards at the same where page at screen 2 was.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

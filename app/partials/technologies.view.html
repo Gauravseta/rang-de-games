@@ -1,0 +1,23 @@
+<div class="header-section">{{headerTitle}}</div>
+<div class="body-section">
+  <div class="container-fluid">
+     <div class="row">
+	
+      <div class=" col-sm-12 align-center">
+           <div class="content-header-title">Lists of All Technologies</div>
+           <div ng-repeat="tech in listsOfTech" class="tech-item" style="clear:both;">
+		<div ng-click="goToTechnology(tech)">
+			{{tech}}
+			
+		</div>
+              
+                
+           </div>
+        
+      </div>
+     </div>
+  </div>
+
+
+</div>
+
