@@ -3,18 +3,19 @@
   <div class="container-fluid">
      <div class="row">
       <div class=" col-sm-12 align-center">
-           <div class="content-header-title">Repositories of {{techName}}</div>
+           <div class="content-header-title">Games List</div>
            <div class="align-left"><span>Search</span><input type="text" value="search" ng-model="searchKeyword"></input></div>
-	   <div ng-repeat="repoitem in listsOfTechsRepo.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage)) | filter: searchKeyword" ng-click="goToUserProfile(repoitem)" class="tech-item" style="line-height:1;">
+	   <div ng-repeat="item in listsOfGames.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage)) | filter: searchKeyword"  class="tech-item" style="line-height:1;">
 		<div class="row">
 		   <div class="col-xs-9 align-left">
-			<div class="repoitem-title">	 {{repoitem.full_name}}
+			<div class="repoitem-title">	 {{item.title}}
                         </div>
-			<div class="margin-top10">{{repoitem.description}}</div>
+			<div class="margin-top10">{{item.platform}}</div>
 		  </div>
 			<div class="col-xs-3">
 			    <div class="margin-left50">
-			      <img src="images/star_black.svg"></img>{{repoitem.stargazers_count}}
+			      <img src="images/star_black.svg"></img>{{item.score}}
+				<div>Editors Choice:{{item.editors_choice}}</div>
                             </div>
 			</div>	
 		</div>
@@ -24,7 +25,7 @@
 	
 	<pagination
 		      ng-model="currentPage"
-		      total-items="totalTechRepoCount"
+		      total-items="totalGamesCount"
 			items-per-page="itemsPerPage"
 			max-size="maxSize" 
 		      boundary-links="true">
