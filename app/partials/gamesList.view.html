@@ -4,8 +4,8 @@
      <div class="row">
       <div class=" col-sm-12 align-center">
            <div class="content-header-title">Games List</div>
-           <div class="align-left"><span>Search</span><input type="text" value="search" ng-model="searchKeyword"></input></div>
-	   <div ng-repeat="item in listsOfGames.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage)) | filter: searchKeyword"  class="tech-item" style="line-height:1;">
+           <div class="align-left"><span>Search</span><input type="text" value="search" ng-model="searchKeyword"></input> Sort <input type="radio" name="sortingbutton" ng-model="sortSelection">Ascend</input> <input type="radio" name="sortingbutton">Descend</input></div>
+	   <div ng-repeat="item in listsOfGames.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage))| filter: searchKeyword | orderBy:'score':false"  class="tech-item" style="line-height:1;">
 		<div class="row">
 		   <div class="col-xs-9 align-left">
 			<div class="repoitem-title">	 {{item.title}}

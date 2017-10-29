@@ -10,6 +10,10 @@ angular.module('rangde.controllers',['ui.router'])
 
 	     $scope.searchKeyword='';
 
+	     $scope.sortSelection=false;
+	     $scope.$watch('sortSelection',function(curr,old){
+		console.log('value changed');
+		});
 	     dataServices.getAllGames().then(function(success){
 			$scope.listsOfGames=success.data.slice(1);
 			$scope.totalGamesCount=$scope.listsOfGames.length;
