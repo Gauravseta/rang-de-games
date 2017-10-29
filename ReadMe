@@ -3,11 +3,12 @@
 *********** Project Description *************
 
 This  WebApp uses AngularJs 1, CSS,BootStrap,UI-BootStrap,Angular UI-Router.
- Front End consists of 1 Screen, 
-	1.Landing screen displays all the games developed by all platforms.
+ Front End consists of 1 Screen. 
+	1.Landing screen displays all the games developed in all platforms.
 	  1.a. Pagination is implemented.
+	  1.b. Search box has been implemented to search game by "title" and "platform".
 
-Note: Search Feature is added to search the games from current page games
+Note: Search Feature is added to search the games from current page.
 
 
 ***************Steps to Deploy ********************************
@@ -44,7 +45,7 @@ Note:If above procedure fails due to restricted access to download via NPM then 
 
 1.Extract "RangDeGames.zip",A directory with name "RangDeGames" would be created with all data.
 2. Configure Tomcat on your local machine to run on <port>
-3. paste the complete folder "CASTRepoProject" in "webapps" directory of tomcat folder.
+3. paste the complete folder "RangDeGames" in "webapps" directory of tomcat folder.
 4. After copying the folder to "webapps" directory of tomcat folder, test the project visually.
 5. Hit the url "http://localhost:<port>/RangDeGames/app/index.html".
 		Example:
@@ -68,15 +69,7 @@ Note: Check the above url correctly as index.html is inside "app" folder and not
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+**********************UI Portfolio *********************************
+My UI Portfolio can be found at
+https://gauravsetaportfolio.herokuapp.com
 
